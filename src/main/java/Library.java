@@ -7,7 +7,7 @@ public class Library {
 
     public Library(int capacity) {
         this.capacity = capacity;
-        this.books = new ArrayList<Book>();
+        this.books = new ArrayList<>();
     }
 
     public int totalBooks() {
@@ -22,5 +22,10 @@ public class Library {
 
     public ArrayList<Book> getBooks() {
         return books;
+    }
+
+    public Book removeBook(Book book) {
+        int index = books.indexOf(book);
+        return books.remove(index);
     }
 }

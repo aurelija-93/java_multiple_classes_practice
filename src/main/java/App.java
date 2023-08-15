@@ -14,5 +14,12 @@ public class App {
 
         System.out.println(myLibrary.getBooks());
         System.out.println(myLibrary.totalBooks());
+
+        Borrower aurelija = new Borrower("Aurelija");
+        aurelija.borrowBook(myLibrary, book2);
+
+        System.out.println(myLibrary.getBooks());
+        System.out.println(myLibrary.totalBooks());
+        System.out.println(aurelija.getBooks());
     }
 }
